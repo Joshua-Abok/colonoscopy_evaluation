@@ -82,8 +82,6 @@ if __name__ == "__main__":
 
 
 
-# load_dotenv()
-
 handler = ChatModelStartHandler()
 chat = ChatOpenAI(
     model="gpt-4",
@@ -140,13 +138,6 @@ agent_executor = AgentExecutor(
 
 agent_executor(
     f"create a report evaluating the patient's record based on the colonoscopy guidelines: {full_text}\n"
-    "again emphasis on creating a report"
+    "again emphasis is on creating a report"
 )
 
-
-# Please provide the patient report so that I can evaluate it based on the colonoscopy guidelines
-# f"Create a report outlining if the medical criteria been met for this patient records: {full_text}"
-#  f"Create a report explaining if the medical necessity has been made base on the these details: {full_text}
-
-# Please note that this report is based on the provided information and the guidelines. 
-# The final decision should be made by the healthcare provider after a thorough evaluation of the patient's condition.
